@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scaleable=0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div id="popup" class="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <a href="#header" class="popup__close">X</a>
+                <form>
+                    <div class="popup__title">Регистрация</div>
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Фамилия">
+                    <input type="text" placeholder="Телефон">
+                    <button class="popup__btn">Зарегистрироваться</button>
+                    <div class="checkbox">
+                        <input class="checkbox__custom" type="checkbox" id="checkbox" name="checkbox" value="green"
+                            checked>
+                        <label for="checkbox" class="checkbox__text">
+                            <p>Даю согласие на обработку своих персональных данных в соответствии с <a
+                                    href="#politic">Политикой конфиденциальности</a></p>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <button class="nav-toggle"><i class="fas fa-bars"></i></button>
+    <div class="nav-menu" >
+        <span class="close">X</span>
+        <ul class="nav-menu--wrapper__uper-ul">
+            <li><a href="#company" class="active">Распродажа</a></li>
+            <li><a href="#company">Акции</a></li>
+            <li><a href="#company">Магазины</a></li>
+            <li><a href="#delivery">Доставка и оплата</a></li>
+            <li><a href="#delivery">Возврат</a></li>
+            <li><a class="active" href="#catalog">Чехлы-накладки</a></li>
+            <li><a class="active" href="#catalog">Сетевые зарядки</a></li>
+            <li><a class="active" href="#catalog">Наушники и гарнитуры</a></li>
+            <li><a class="active" href="#catalog"> Автомобильные зарядки</a></li>
+            <li><a class="active" href="#catalog"> Стекла и пленки</a></li>
+            <li><a class="active" href="#catalog">Держатели и попсокеты</a></li>
+        </ul>
+        <a href="tel:89002834869">8(900)283-48-69</a>
+        <select>
+            <option>г. Краснодар</option>
+            <option>г. Краснодар</option>
+            <option>г. Краснодар</option>
+            <option>г. Краснодар</option>
+        </select>
+    </div>
+    <!-- end navmenu -->
+    <header id="header" class="header">
+        <div class="container">
+            <!-- HEADER_TOP -->
+            <div class="header__top">
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 800px)" srcset="images/small.png">
+                        <source srcset="images/bigLogo.png">
+                        <img class="logo" src="images/bigLogo.png" alt="logo">
+                    </picture>
+                </a>
+                <div class="header__top--wrapper">
+                    <div class="header__top--wrapper__uper">
+                        <nav>
+                            <ul class="header__top--wrapper__uper-ul">
+                                <li><a href="#company" class="active">Распродажа</a></li>
+                                <li><a href="#company">Акции</a></li>
+                                <li><a href="#company">Магазины</a></li>
+                                <li><a href="#delivery">Доставка и оплата</a></li>
+                                <li><a href="#delivery">Возврат</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__top--wrapper__uper-info">
+                            <a href="tel:89002834869">8(900)283-48-69</a>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <select>
+                                <option>г. Краснодар</option>
+                                <option>г. Краснодар</option>
+                                <option>г. Краснодар</option>
+                                <option>г. Краснодар</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="header__top--wrapper__down">
+                        <div class="header__top--wrapper__down-inner">
+                            <button class="header__btn">Каталог</button>
+                            <span></span>
+                            <input type="text" class="header__input" placeholder="Поиск"><i class="fas fa-search"></i>
+                        </div>
+                        <div class="header__top--wrapper__inner">
+                            <a href="#" class="header__top--wrapper__inner-icon">
+                                <i class="far fa-heart"></i>
+                                <div class="far-icons">Избранное</div> 
+                            </a>
+                            <a href="#popup" class="header__top--wrapper__inner-icon">
+                                <i class="far fa-user-circle"></i>
+                                <div class="far-icons">Профиль</div>
+                            </a>
+                            <a href="" class="header__top--wrapper__inner-icon">
+                                <svg class="basket" viewBox="0 0 15 17" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.8917 16.2995L14.8914 16.2996L14.8928 16.3074C14.8975 16.334 14.8999 16.3616 14.9 16.3898C14.9 16.6657 14.6597 16.9 14.3495 16.9H14.3495H14.3495H14.3495H14.3494H14.3494H14.3494H14.3494H14.3494H14.3494H14.3494H14.3493H14.3493H14.3493H14.3493H14.3493H14.3493H14.3492H14.3492H14.3492H14.3492H14.3492H14.3492H14.3491H14.3491H14.3491H14.3491H14.3491H14.349H14.349H14.349H14.349H14.349H14.349H14.3489H14.3489H14.3489H14.3489H14.3489H14.3489H14.3488H14.3488H14.3488H14.3488H14.3488H14.3488H14.3487H14.3487H14.3487H14.3487H14.3487H14.3486H14.3486H14.3486H14.3486H14.3486H14.3486H14.3485H14.3485H14.3485H14.3485H14.3485H14.3484H14.3484H14.3484H14.3484H14.3484H14.3484H14.3483H14.3483H14.3483H14.3483H14.3483H14.3483H14.3482H14.3482H14.3482H14.3482H14.3482H14.3482H14.3481H14.3481H14.3481H14.3481H14.3481H14.3481H14.348H14.348H14.348H14.348H14.348H14.348H14.3479H14.3479H14.3479H14.3479H14.3479H14.3479H14.3478H14.3478H14.3478H14.3478H14.3478H0.650491C0.49384 16.9 0.345744 16.8382 0.242034 16.7318C0.138601 16.6257 0.0887317 16.4853 0.102148 16.3448L1.20928 4.7792L1.20928 4.77919C1.23398 4.52099 1.46718 4.31408 1.75763 4.31408H4.0334H4.1334V4.21408V3.25195C4.1334 1.51997 5.63745 0.1 7.49974 0.1C9.36212 0.1 10.8663 1.51998 10.8663 3.25195V4.21408V4.31408H10.9663H13.2405C13.531 4.31408 13.7642 4.52099 13.7889 4.77919L13.8884 4.76967L13.7889 4.7792L14.8917 16.2995ZM9.66544 4.31408H9.76544V4.21408V3.25195C9.76544 2.07058 8.74307 1.12036 7.49983 1.12036C6.25666 1.12036 5.23438 2.07059 5.23438 3.25195V4.21408V4.31408H5.33438H9.66544ZM1.2625 15.7702L1.25201 15.8797H1.36204H13.6362H13.7463L13.7358 15.7702L12.7455 5.42492L12.7368 5.33444H12.6459H10.9664H10.8664V5.43444V6.52561C10.8664 6.80145 10.6262 7.0358 10.3159 7.0358C10.0057 7.0358 9.76544 6.80145 9.76544 6.52561V5.43444V5.33444H9.66544H5.33438H5.23438V5.43444V6.52561C5.23438 6.80145 4.99411 7.0358 4.68389 7.0358C4.37367 7.0358 4.1334 6.80145 4.1334 6.52561V5.43444V5.33444H4.0334H2.35235H2.26147L2.25281 5.42492L1.2625 15.7702Z"
+                                        stroke="#737C92" stroke-width="0.2" />
+                                </svg>
+                                <div class="far-icons">Корзина<span>2</span></div> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- SECTION_BOTTOM-->
+    <section class="section__bottom">
+        <div class="container">
+            <ul class="section__bottom--wrapper">
+                <li><a class="active" href="#catalog">
+                        <svg class="icon active-img" width="25" height="25" viewBox="0 0 25 25"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.2857 6H11.7143C10.7714 6 10 6.77838 10 7.72973V20.2703C10 21.2216 10.7714 22 11.7143 22H17.2857C18.2286 22 19 21.2216 19 20.2703V7.72973C19 6.77838 18.2286 6 17.2857 6ZM12.7857 8.59459H11.7143C11.2409 8.59459 10.8571 8.20735 10.8571 7.72973C10.8571 7.25211 11.2409 6.86486 11.7143 6.86486H12.7857C13.2591 6.86486 13.6429 7.25211 13.6429 7.72973C13.6429 8.20735 13.2591 8.59459 12.7857 8.59459Z" />
+                            <path
+                                d="M9.13043 19.3111V7.06667C9.13043 6.01723 10.0063 5.16667 11.087 5.16667H15V3.68889C15 2.76 14.2174 2 13.4783 2H6.73891C5.565 2 5 2.76 5 3.68889V19.3111C5 20.24 5.78261 21 6.73913 21H9.45652C9.02174 20.6833 9.13043 20.0475 9.13043 19.3111ZM8.04348 4.53333H6.73913C6.25891 4.53333 5.86957 4.15523 5.86957 3.68889C5.86957 3.22254 6.25891 2.84444 6.73913 2.84444H8.04348C8.5237 2.84444 8.91304 3.22254 8.91304 3.68889C8.91304 4.15523 8.5237 4.53333 8.04348 4.53333Z" />
+                        </svg>
+                        Чехлы-накладки</a></li>
+                <li><a href="#catalog">
+                        <svg class="icon" width="26" height="25" viewBox="0 0 26 25" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.8174 1H14.0083C12.8998 1 12.0009 1.93137 12.0009 3.07995V15.3688C12.0009 16.5178 12.8998 17.4487 14.0083 17.4487H20.8174C21.9263 17.4487 22.8248 16.5174 22.8248 15.3688V3.07995C22.8252 1.93137 21.9263 1 20.8174 1ZM15.7294 2.22757H19.0966C19.2598 2.22757 19.392 2.36456 19.392 2.53363C19.392 2.70271 19.2598 2.8397 19.0966 2.8397H15.7294C15.5663 2.8397 15.434 2.70271 15.434 2.53363C15.434 2.36415 15.5663 2.22757 15.7294 2.22757ZM15.7294 15.99H14.4661C14.3029 15.99 14.1707 15.853 14.1707 15.6839C14.1707 15.5148 14.3029 15.3778 14.4661 15.3778H15.7294C15.8926 15.3778 16.0248 15.5148 16.0248 15.6839C16.0244 15.853 15.8922 15.99 15.7294 15.99ZM17.4128 16.4939C16.9813 16.4939 16.6311 16.1311 16.6311 15.6839C16.6311 15.2367 16.9813 14.8739 17.4128 14.8739C17.8448 14.8739 18.1946 15.2367 18.1946 15.6839C18.1946 16.1315 17.8448 16.4939 17.4128 16.4939ZM20.36 15.99H19.0966C18.9335 15.99 18.8013 15.853 18.8013 15.6839C18.8013 15.5148 18.9335 15.3778 19.0966 15.3778H20.36C20.5232 15.3778 20.6554 15.5148 20.6554 15.6839C20.6554 15.853 20.5232 15.99 20.36 15.99ZM20.9615 13.8973H13.8646V3.8661H20.9615V13.8973Z" />
+                            <path
+                                d="M5.27807 15.623L3.27187 13.8907C2.99951 13.6558 2.84229 13.3078 2.84229 12.9408V11.5409C2.84229 10.8576 3.37669 10.3039 4.03616 10.3039H4.19807V6.93543C4.19807 6.55367 4.49942 6.24143 4.86786 6.24143C5.23631 6.24143 5.53765 6.55367 5.53765 6.93543V10.3039H7.98658V6.93543C7.98658 6.55367 8.28792 6.24143 8.65637 6.24143C9.02481 6.24143 9.32616 6.55367 9.32616 6.93543V10.3039H9.76649C10.426 10.3039 10.9604 10.8576 10.9604 11.5409V12.9408C10.9604 13.3078 10.8031 13.6562 10.5308 13.8911L8.52458 15.6234C8.25222 15.8583 8.095 16.2068 8.095 16.5737V17.4068C8.095 17.899 7.81768 18.324 7.41607 18.5232V18.6434C7.32515 20.4181 9.05422 22.9345 11.6754 22.9345C15.2114 22.9345 16.4894 18.8281 16.5077 18.6158H17.6654C17.4859 20.7521 15.2586 23.9996 11.6754 24C8.3205 24 6.38776 21.3137 6.38776 18.6434V18.524C5.9853 18.3251 5.70726 17.8997 5.70726 17.4068V16.5737C5.70726 16.2064 5.55003 15.8583 5.27807 15.623Z" />
+                        </svg>
+                        Сетевые зарядки</a></li>
+                <li><a href="#catalog">
+                        <svg class="icon" width="26" height="25" viewBox="0 0 26 25" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.6897 19.5C7.6897 20.33 8.3597 21 9.1897 21C10.0197 21 10.6897 20.33 10.6897 19.5V19H7.6897V19.5Z" />
+                            <path
+                                d="M6.6897 4C5.6197 4 4.6097 4.39846 3.8597 5.12C3.7497 5.21692 3.6897 5.36769 3.6897 5.51846V10.02C3.6897 10.1708 3.7497 10.3215 3.8597 10.4185C4.8497 11.3662 6.3497 11.7538 7.6897 11.42V18H10.6897V7.76923C10.6897 5.69077 8.8997 4 6.6897 4ZM5.2097 8.30769C4.9337 8.30769 4.7047 8.06646 4.7047 7.76923C4.7047 7.472 4.9237 7.23077 5.1997 7.23077H5.2097C5.4857 7.23077 5.7097 7.472 5.7097 7.76923C5.7097 8.06646 5.4857 8.30769 5.2097 8.30769ZM8.1897 8.30769C7.9137 8.30769 7.6897 8.06646 7.6897 7.76923C7.6897 7.472 7.4657 7.23077 7.1897 7.23077C6.9137 7.23077 6.6897 6.98954 6.6897 6.69231C6.6897 6.39508 6.9137 6.15385 7.1897 6.15385C8.0167 6.15385 8.6897 6.87862 8.6897 7.76923C8.6897 8.06646 8.4657 8.30769 8.1897 8.30769Z" />
+                            <path
+                                d="M13.6897 19.5C13.6897 20.33 14.3597 21 15.1897 21C16.0197 21 16.6897 20.33 16.6897 19.5V19H13.6897V19.5Z"
+                                fill="#BFC8DC" />
+                            <path
+                                d="M20.5197 5.12C19.7697 4.39846 18.7597 4 17.6897 4C15.4797 4 13.6897 5.69077 13.6897 7.76923V18H16.6897V11.42C18.0297 11.7538 19.5297 11.3662 20.5197 10.4185C20.6297 10.3215 20.6897 10.1708 20.6897 10.02V5.51846C20.6897 5.36769 20.6297 5.21692 20.5197 5.12ZM17.1897 7.23077C16.9137 7.23077 16.6897 7.472 16.6897 7.76923C16.6897 8.06646 16.4657 8.30769 16.1897 8.30769C15.9137 8.30769 15.6897 8.06646 15.6897 7.76923C15.6897 6.87862 16.3627 6.15385 17.1897 6.15385C17.4657 6.15385 17.6897 6.39508 17.6897 6.69231C17.6897 6.98954 17.4657 7.23077 17.1897 7.23077ZM19.1697 8.30769C18.8937 8.30769 18.6697 8.06646 18.6697 7.76923C18.6697 7.472 18.8937 7.23077 19.1697 7.23077H19.1797C19.4557 7.23077 19.6747 7.472 19.6747 7.76923C19.6747 8.06646 19.4457 8.30769 19.1697 8.30769Z" />
+                        </svg>
+                        Наушники и гарнитуры</a></li>
+                <li><a href="#catalog">
+                        <svg class="icon" width="26" height="25" viewBox="0 0 26 25" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.864 3.75718H13.4095C13.4095 3.71582 13.4098 3.67527 13.4101 3.63554C13.4133 3.16875 13.4157 2.81329 12.955 2.5623V2.43929C12.955 2.32279 12.9071 2.21105 12.8219 2.12867C12.7366 2.04628 12.621 2 12.5005 2C12.38 2 12.2644 2.04628 12.1791 2.12867C12.0939 2.21105 12.046 2.32279 12.046 2.43929V2.5623C11.5835 2.81599 11.587 3.20996 11.5908 3.6393C11.5911 3.67833 11.5915 3.71765 11.5915 3.75718H11.137L10.7961 5.07506H14.2049L13.864 3.75718Z" />
+                            <path
+                                d="M13.8647 15.4106C13.8647 16.1384 13.2542 16.7285 12.5011 16.7285C11.7481 16.7285 11.1376 16.1384 11.1376 15.4106C11.1376 14.6827 11.7481 14.0927 12.5011 14.0927C13.2542 14.0927 13.8647 14.6827 13.8647 15.4106Z" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16.4052 15.0196C15.3689 13.8511 15.228 12.7309 15.228 11.3954C15.6173 11.2983 15.9623 11.0792 16.209 10.7724C16.4557 10.4655 16.5903 10.0883 16.5916 9.69976V8.82117C16.5903 8.43259 16.4557 8.05539 16.209 7.74857C15.9623 7.44176 15.6173 7.22264 15.228 7.1255V6.6247C15.228 6.39168 15.1323 6.16821 14.9618 6.00344C14.7913 5.83868 14.5601 5.74611 14.319 5.74611H10.683C10.4419 5.74611 10.2107 5.83868 10.0402 6.00344C9.86976 6.16821 9.77399 6.39168 9.77399 6.6247V7.1255C9.38472 7.22264 9.03974 7.44176 8.79303 7.74857C8.54632 8.05539 8.41179 8.43259 8.41048 8.82117V9.69976C8.41179 10.0883 8.54632 10.4655 8.79303 10.7724C9.03974 11.0792 9.38472 11.2983 9.77399 11.3954C9.77399 12.6079 9.68764 13.7852 8.67864 14.9098C7.91745 15.7652 7.49968 16.8566 7.50147 17.9848V18.9249C7.50147 19.391 7.69301 19.8379 8.03396 20.1675C8.3749 20.497 8.83732 20.6821 9.31949 20.6821H9.77399V22H15.228V20.6821H15.6826C16.1647 20.6821 16.6271 20.497 16.9681 20.1675C17.309 19.8379 17.5006 19.391 17.5006 18.9249C17.5006 18.8573 17.5008 18.7892 17.501 18.7208C17.5048 17.5453 17.509 16.2608 16.4052 15.0196ZM9.77399 10.4597C9.29329 10.1975 9.30195 9.78176 9.3149 9.16088C9.31713 9.05383 9.31949 8.94068 9.31949 8.82117C9.31965 8.6671 9.36173 8.51578 9.44151 8.38239C9.52128 8.249 9.63594 8.13823 9.77399 8.06119V10.4597ZM15.6875 9.1543C15.7013 9.75549 15.7112 10.187 15.228 10.4597V8.06119C15.3661 8.13823 15.4808 8.249 15.5605 8.38239C15.6403 8.51578 15.6824 8.6671 15.6826 8.82117C15.6826 8.93749 15.6851 9.04854 15.6875 9.1543ZM12.501 17.6071C12.0516 17.6071 11.6122 17.4782 11.2385 17.2369C10.8648 16.9955 10.5735 16.6525 10.4015 16.2511C10.2295 15.8498 10.1845 15.4081 10.2722 14.9821C10.3599 14.556 10.5763 14.1646 10.8941 13.8574C11.2119 13.5503 11.6168 13.3411 12.0577 13.2563C12.4985 13.1716 12.9554 13.2151 13.3707 13.3813C13.7859 13.5476 14.1408 13.8291 14.3906 14.1903C14.6403 14.5515 14.7735 14.9762 14.7735 15.4106C14.7735 15.9931 14.5341 16.5518 14.1079 16.9637C13.6818 17.3756 13.1037 17.6071 12.501 17.6071Z" />
+                        </svg>
+                        Автомобильные зарядки</a></li>
+                <li><a href="#catalog">
+                        <svg class="icon" width="26" height="25" viewBox="0 0 26 25" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.02813 2C5.62874 2 5.30591 2.32 5.30591 2.71429V21.2857C5.30591 21.68 5.62874 22 6.02813 22H13.2504C14.2477 22 15.0552 21.2007 15.0559 20.2143C15.0559 19.6486 14.7929 19.123 14.3337 18.7857C14.2707 18.7395 14.2205 18.6582 14.1983 18.5848C14.141 18.3954 14.2559 18.2171 14.4465 18.1607L18.3059 17V2.71429C18.3059 2.32 17.9831 2 17.5837 2H6.02813ZM9.63924 3.78571C9.63924 3.58847 9.79914 3.42857 9.99638 3.42857H13.6154C13.8127 3.42857 13.9726 3.58847 13.9726 3.78571C13.9726 3.98296 13.8127 4.14286 13.6154 4.14286H9.99638C9.79914 4.14286 9.63924 3.98296 9.63924 3.78571ZM11.8059 18.0714C12.604 18.0714 13.2504 18.7114 13.2504 19.5C13.2504 20.2886 12.604 20.9286 11.8059 20.9286C11.0086 20.9286 10.3615 20.2886 10.3615 19.5C10.3615 18.7114 11.0086 18.0714 11.8059 18.0714Z" />
+                            <path
+                                d="M15.7875 20C15.7514 19.5108 15.5842 19.0442 15.3059 18.6598L17.3059 18L15.7875 20Z" />
+                        </svg>
+                        Стекла и пленки</a></li>
+                <li><a href="#catalog">
+                        <svg class="icon" width="22" height="25" viewBox="0 0 22 25" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path
+                                    d="M3.34405 20.8871C3.6704 18.6728 4.27691 16.9289 5.01936 15.5644C5.58748 14.5199 6.23447 13.6984 6.88664 13.0591C7.71055 12.2503 8.54016 11.7336 9.22865 11.4057L8.89919 8.38998L10.368 8.28842L9.61415 1.58812C9.53061 0.84405 10.066 0.21417 10.8043 0.189438L16.3911 0.000526216C16.4062 0 16.4212 0 16.4368 0C17.1569 0 17.8107 0.578837 17.9009 1.30659L18.674 7.52015L20.6912 8.05057L21.1338 10.9853L19.3827 13.2233L19.8154 16.7026C19.9078 17.4456 19.391 18.1755 18.6673 18.3239L12.9751 19.4921C12.8875 19.51 12.8003 19.5189 12.7157 19.5189C12.0999 19.5189 11.5805 19.0632 11.5068 18.4091L11.0715 14.5383L9.58509 14.6693L9.45019 13.4322C8.15311 14.6967 6.5328 17.0425 6.38804 20.9408C8.06387 21.2533 9.23488 22.0195 9.20842 22.9114C9.17366 24.0744 7.11856 25.0089 4.6183 25C2.11753 24.991 0.118467 24.0417 0.153229 22.8788C0.180208 21.9427 1.51828 21.1544 3.34405 20.8871ZM17.0516 2.63739L10.782 2.95681L11.4835 9.19193L12.2337 9.42452L12.668 12.9875L11.9541 13.3769L12.3048 16.4969L18.6413 15.4218L17.0516 2.63739ZM16.5707 17.3404C16.4871 16.8273 16.1317 16.4606 15.7763 16.52C15.4214 16.5795 15.2015 17.0436 15.285 17.5561C15.3685 18.0687 15.7239 18.436 16.0793 18.3765C16.4342 18.317 16.6542 17.8529 16.5707 17.3404Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="20.9816" height="25" fill="white"
+                                        transform="matrix(-1 0 0 1 21.1338 0)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        Держатели и попсокеты</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- SECTION_BOTTOM end-->
+    <!-- ANOUNCE-->
+    <section class="anounce">
+        <div class="container">
+            <div class="header__top--wrapper__down-inner main__input">
+                <input type="text" class="header__input" placeholder="Поиск">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="anounce__inner">
+                <div class="anounce__inner-slider">
+                    <div class="anounce__inner-slider__banner">
+                        <h1 class="anounce__inner-title">Самые яркие скидки</h1>
+                        <p>доставим заказ курьером от 1000р</p>
+                        <div class="anounce__inner-arrow">Узнать больше</div>
+                    </div>
+                    <div class="anounce__inner-slider__banner">
+                        <h1 class="anounce__inner-title">Самые яркие скидки</h1>
+                        <p>доставим заказ курьером от 1000р</p>
+                        <div class="anounce__inner-arrow">Узнать больше</div>
+                    </div>
+                    <div class="anounce__inner-slider__banner">
+                        <h1 class="anounce__inner-title">Самые яркие скидки</h1>
+                        <p>доставим заказ курьером от 1000р</p>
+                        <div class="anounce__inner-arrow">Узнать больше</div>
+                    </div>
+                    <div class="anounce__inner-slider__banner">
+                        <h1 class="anounce__inner-title">Самые яркие скидки</h1>
+                        <p>доставим заказ курьером от 1000р</p>
+                        <div class="anounce__inner-arrow">Узнать больше</div>
+                    </div>
+                </div>
+                <div class="anounce__inner-card card">
+                    <span class="productOfTheDay">Товар дня</span>
+                    <i class="fas fa-heart"></i>
+                    <img src="images/product/phone.png" alt="product">
+                    <div class="anounce__inner-card_down card_down">
+                        <div class="anounce__inner-card_product card_product">Аксессуары</div>
+                        <p>Силиконовый чехол Soft TPU для Samsung Galaxy A31 черный</p>
+                        <div class="anounce__inner-card_wrapper card_wrapper">
+                            <div class="anounce__inner-card_wrapper-price card_wrapper-price">14 900 ₽</div>
+                            <button class="anounce__inner-card_wrapper-btn card_btn">
+                                <span class="btn-curve"></span>
+                                <span class="btn-notcurve"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ANOUNCE end-->
+    <!-- ANOUNCE sliders-->
+    <section class="anounce__sliders">
+        <div class="container">
+            <div class="anounce__sliders-wrappers">
+                <div class="anounce__sliders-wrappers_one slider__type">
+                    <div class="slider__type_inner">
+                        <div class="slider__type_inner-info">
+                            <p>Обзор наушников</p>
+                            <h2>Beats Studio</h2>
+                        </div>
+                        <div class="anounce__inner-arrow">Узнать больше</div>
+                    </div>
+                    <div class="slider__type_inner">
+                        <div class="slider__type_inner-info">
+                            <p>Обзор наушников</p>
+                            <h2>Beats Studio</h2>
+                        </div>
+                        <div class="anounce__inner-arrow">Узнать больше</div>
+                    </div>
+                </div>
+                <div class="anounce__sliders-wrappers_two slider__type">
+                    <div class="slider__type_inner">
+                        <div class="slider__type_inner-info">
+                            <p>Скидки на смарт-часы</p>
+                            <h2>Honor Watch</h2>
+                        </div>
+                        <div class="anounce__inner-arrow">Узнать больше</div>
+                    </div>
+                    <div class="slider__type_inner">
+                        <div class="slider__type_inner-info">
+                            <p>Скидки на смарт-часы</p>
+                            <h2>Honor Watch</h2>
+                        </div>
+                        <div class="anounce__inner-arrow">Узнать больше</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ANOUNCE sliders end-->
+    <!-- Popular products -->
+    <section class="popular__products">
+        <div class="container">
+            <div class="popular__products-up">
+                <div class="popular__products-up__main">Популярное <i class="fas fa-arrow-right"></i></div>
+                <div class="popular__products-up__choose">
+                    <div class="popular__products-up__choose-popular">Популярное</div>
+                    <div class="popular__products-up__choose-popular">Со скидкой</div>
+                    <div class="popular__products-up__choose-popular">Новинки</div>
+                </div>
+            </div>
+            <div class="popular__products-wrapper">
+                <div class="popular__products-wrapper__card card">
+                    <span class="span">
+                        <span class="span_small discount">Скидка</span>
+                        <span class="span_small new">Новинка</span>
+                    </span>
+                    <i class="fas fa-heart"></i>
+                    <img src="images/product/image1.jpg" alt="product">
+                    <div class="anounce__inner-card_down card_down">
+                        <div class="anounce__inner-card_product card_product">Телефоны</div>
+                        <p>Телефон INOI 281 (черный)</p>
+                        <div class="anounce__inner-card_wrapper card_wrapper">
+                            <div class="anounce__inner-card_wrapper-price card_wrapper-price">780 ₽</div>
+                            <button class="anounce__inner-card_wrapper-btn card_btn">
+                                <span class="btn-curve"></span>
+                                <span class="btn-notcurve"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular__products-wrapper__card card">
+                    <span class="span">
+                        <span class="span_small new">Новинка</span>
+                    </span>
+                    <i class="fas fa-heart"></i>
+                    <img src="images/product/image 2.jpg" alt="product">
+                    <div class="anounce__inner-card_down card_down">
+                        <div class="anounce__inner-card_product card_product">Аксессуары</div>
+                        <p>Сетевое зарядное устройство 1 USB Adapter 1A (черный)</p>
+                        <div class="anounce__inner-card_wrapper card_wrapper">
+                            <div class="anounce__inner-card_wrapper-price card_wrapper-price">780 ₽</div>
+                            <button class="anounce__inner-card_wrapper-btn card_btn">
+                                <span class="btn-curve"></span>
+                                <span class="btn-notcurve"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular__products-wrapper__card card card-close">
+                    <span class="span">
+                        <span class="span_small discount">Скидка</span>
+                        <span class="span_small new">Новинка</span>
+                    </span>
+                    <i class="fas fa-heart"></i>
+                    <img src="images/product/image 3.jpg" alt="product">
+                    <div class="anounce__inner-card_down card_down">
+                        <div class="anounce__inner-card_product card_product">Аксессуары</div>
+                        <p>Подставка для смартфона с регулировкой угла обзора (черный)</p>
+                        <div class="anounce__inner-card_wrapper card_wrapper">
+                            <div class="anounce__inner-card_wrapper-price card_wrapper-price">780 ₽
+                                <span>990 ₽</span>
+                            </div>
+                            <button class="anounce__inner-card_wrapper-btn card_btn">
+                                <span class="btn-curve"></span>
+                                <span class="btn-notcurve"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular__products-wrapper__card card card-close">
+                    <span class="span">
+                        <span class="span_small new">Новинка</span>
+                    </span>
+                    <i class="fas fa-heart"></i>
+                    <img src="images/product/image 4.jpg" alt="product">
+                    <div class="anounce__inner-card_down card_down">
+                        <div class="anounce__inner-card_product card_product">Аксессуары</div>
+                        <p>Беспроводные наушники Devia TWS V6 Airpods Analogue (белый)</p>
+                        <div class="anounce__inner-card_wrapper card_wrapper">
+                            <div class="anounce__inner-card_wrapper-price card_wrapper-price">780 ₽</div>
+                            <button class="anounce__inner-card_wrapper-btn card_btn">
+                                <span class="btn-curve"></span>
+                                <span class="btn-notcurve"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular__products-wrapper__card card card-close">
+                    <i class="fas fa-heart"></i>
+                    <img src="images/product/image 5.jpg" alt="product">
+                    <div class="anounce__inner-card_down card_down">
+                        <div class="anounce__inner-card_product card_product">Аксессуары</div>
+                        <p>Кабель Ruler Flat Lightning to USB 1m (белый)</p>
+                        <div class="anounce__inner-card_wrapper card_wrapper">
+                            <div class="anounce__inner-card_wrapper-price card_wrapper-price">780 ₽</div>
+                            <button class="anounce__inner-card_wrapper-btn card_btn">
+                                <span class="btn-curve"></span>
+                                <span class="btn-notcurve"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular__products-wrapper__card card card-close">
+                    <i class="fas fa-heart"></i>
+                    <img src="images/product/image 6.jpg" alt="product">
+                    <div class="anounce__inner-card_down card_down">
+                        <div class="anounce__inner-card_product card_product">Аксессуары</div>
+                        <p>Автомобильный держатель в решетку вентеляции с магнитом (черный)</p>
+                        <div class="anounce__inner-card_wrapper card_wrapper">
+                            <div class="anounce__inner-card_wrapper-price card_wrapper-price">780 ₽</div>
+                            <button class="anounce__inner-card_wrapper-btn card_btn">
+                                <span class="btn-curve"></span>
+                                <span class="btn-notcurve"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular__products-wrapper__card card card-close">
+                    <i class="fas fa-heart"></i>
+                    <img src="images/product/image 7.jpg" alt="product">
+                    <div class="anounce__inner-card_down card_down">
+                        <div class="anounce__inner-card_product card_product">Телефоны</div>
+                        <p>Телефон BQ-1806 ART+ (красный)</p>
+                        <div class="anounce__inner-card_wrapper card_wrapper">
+                            <div class="anounce__inner-card_wrapper-price card_wrapper-price">780 ₽</div>
+                            <button class="anounce__inner-card_wrapper-btn card_btn">
+                                <span class="btn-curve"></span>
+                                <span class="btn-notcurve"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular__products-wrapper__card card card-close">
+                    <span class="span">
+                        <span class="span_small discount">Скидка</span>
+                        <span class="span_small new">Новинка</span>
+                    </span>
+                    <i class="fas fa-heart"></i>
+                    <img src="images/product/image 8.jpg" alt="product">
+                    <div class="anounce__inner-card_down card_down">
+                        <div class="anounce__inner-card_product card_product">Телефоны</div>
+                        <p>Телефон BQ-1806 ART+ (синий)</p>
+                        <div class="anounce__inner-card_wrapper card_wrapper">
+                            <div class="anounce__inner-card_wrapper-price card_wrapper-price">780 ₽
+                                <span>990 ₽</span>
+                            </div>
+                            <button class="anounce__inner-card_wrapper-btn card_btn">
+                                <span class="btn-curve"></span>
+                                <span class="btn-notcurve"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular__products-wrapper__card card card-close">
+                    <span class="span">
+                        <span class="span_small discount">Скидка</span>
+                        <span class="span_small new">Новинка</span>
+                    </span>
+                    <i class="fas fa-heart"></i>
+                    <img src="images/product/image1.jpg" alt="product">
+                    <div class="anounce__inner-card_down card_down">
+                        <div class="anounce__inner-card_product card_product">Телефоны</div>
+                        <p>Телефон INOI 281 (черный)</p>
+                        <div class="anounce__inner-card_wrapper card_wrapper">
+                            <div class="anounce__inner-card_wrapper-price card_wrapper-price">780 ₽</div>
+                            <button class="anounce__inner-card_wrapper-btn card_btn">
+                                <span class="btn-curve"></span>
+                                <span class="btn-notcurve"><i class="fas fa-shopping-cart"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Popular products end-->
+    <!-- Buying -->
+    <section class="buying">
+        <div class="container">
+            <div class="buying__wrapper">
+                <p>более чем 1000 довольных покупателей</p>
+                <div class="buying__wrapper-title">Ежедневно выбирают нас</div>
+                <ul class="buying__wrapper-inner">
+                    <li class="buying__wrapper-inner__item">Аксессуары от топовых брендов</li>
+                    <li class="buying__wrapper-inner__item">Большой ассортимент</li>
+                    <li class="buying__wrapper-inner__item">Быстрая онлайн оплата</li>
+                    <li class="buying__wrapper-inner__item">Удобно забирать</li>
+                </ul>
+                <button class="buying__wrapper-btn">Начать покупки</button>
+            </div>
+
+        </div>
+    </section>
+    <!-- Buying end-->
+    <!-- Watching-->
+    <section class="watching">
+        <div class="container">
+            <div class="popular__products-up__main watching__title">Часто просматриваемые</div>
+            <div class="watching__inner">
+                <div class="card__music">
+                    <picture>
+                        <source media="(max-width: 880px)" srcset="images/master.jpg">
+                        <source srcset="images/music.jpg">
+                        <img class="card__music" src="images/music.jpg" alt="anounce">
+                    </picture>
+                </div>
+                <div class="watching__wraper">
+                    <div class="popular__products-wrapper__card card">
+                        <span class="span">
+                            <span class="span_small new">Новинка</span>
+                        </span>
+                        <i class="fas fa-heart"></i>
+                        <img src="images/product/headphoney.png" alt="product">
+                        <div class="anounce__inner-card_down card_down">
+                            <div class="anounce__inner-card_product card_product">Наушники</div>
+                            <p>Наушники EAR35 (желтый)</p>
+                            <div class="anounce__inner-card_wrapper card_wrapper">
+                                <div class="anounce__inner-card_wrapper-price card_wrapper-price">780 ₽</div>
+                                <button class="anounce__inner-card_wrapper-btn card_btn">
+                                    <span class="btn-curve"></span>
+                                    <span class="btn-notcurve"><i class="fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular__products-wrapper__card card">
+                        <span class="span">
+                            <span class="span_small new">Новинка</span>
+                        </span>
+                        <i class="fas fa-heart"></i>
+                        <img src="images/product/headphoner.png" alt="product">
+                        <div class="anounce__inner-card_down card_down">
+                            <div class="anounce__inner-card_product card_product">Наушники</div>
+                            <p>Наушники EAR31 (красный)</p>
+                            <div class="anounce__inner-card_wrapper card_wrapper">
+                                <div class="anounce__inner-card_wrapper-price card_wrapper-price">780 ₽</div>
+                                <button class="anounce__inner-card_wrapper-btn card_btn">
+                                    <span class="btn-curve"></span>
+                                    <span class="btn-notcurve"><i class="fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular__products-wrapper__card card">
+                        <span class="span">
+                            <span class="span_small new">Новинка</span>
+                        </span>
+                        <i class="fas fa-heart"></i>
+                        <img src="images/product/headphoneb.png" alt="product">
+                        <div class="anounce__inner-card_down card_down">
+                            <div class="anounce__inner-card_product card_product">Наушники</div>
+                            <p>Наушники EAR6 (черный)</p>
+                            <div class="anounce__inner-card_wrapper card_wrapper">
+                                <div class="anounce__inner-card_wrapper-price card_wrapper-price">780 ₽</div>
+                                <button class="anounce__inner-card_wrapper-btn card_btn">
+                                    <span class="btn-curve"></span>
+                                    <span class="btn-notcurve"><i class="fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular__products-wrapper__card card">
+                        <span class="span">
+                            <span class="span_small new">Новинка</span>
+                        </span>
+                        <i class="fas fa-heart"></i>
+                        <img src="images/product/headphoneb.png" alt="product">
+                        <div class="anounce__inner-card_down card_down">
+                            <div class="anounce__inner-card_product card_product">Наушники</div>
+                            <p>Наушники EAR6 (черный)</p>
+                            <div class="anounce__inner-card_wrapper card_wrapper">
+                                <div class="anounce__inner-card_wrapper-price card_wrapper-price">780 ₽</div>
+                                <button class="anounce__inner-card_wrapper-btn card_btn">
+                                    <span class="btn-curve"></span>
+                                    <span class="btn-notcurve"><i class="fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Watching end-->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <ul>
+                    <li id="catalog" class="footer__wrapper-title">Каталог товаров</li>
+                    <i class="fas fa-chevron-right"></i>
+                    <div class="footer__wrapper-lists hidden">
+                    <li><a href="#">Чехлы и накладки</a></li>
+                    <li><a href="#">Автомобильные зарядки </a></li>
+                    <li><a href="#">Держатели и попсокеты</a></li>
+                    <li><a href="#">Сетевые зарядки</a></li>
+                    <li><a href="#">Наушники и гарнитуры</a></li>
+                    <li><a href="#">Стекла и пленки</a></li>
+                </div>
+                </ul>
+                <ul>
+                    <li id="company" class="footer__wrapper-title">О компании</li>
+                    <i class="fas fa-chevron-right"></i>
+                    <div class="footer__wrapper-lists hidden">
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Карьера</a></li>
+                    <li><a href="#">Магазины</a></li>
+                    <li><a href="#">Акции</a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <li id="delivery" class="footer__wrapper-title">Доставка и оплата</li>
+                    <i class="fas fa-chevron-right"></i>
+                    <div class="footer__wrapper-lists hidden">
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Возврат</a></li>
+                    </div>
+                </ul>
+                <ul>
+                    <li class="footer__wrapper-title">Контакты</li>
+                    <i class="fas fa-chevron-right"></i>
+                    <div class="footer__wrapper-lists hidden">
+                    <li class="footer__wrapper-address"><a href="#">Россия, г. Краснодар
+                            ул. Красных Партизан, 218</a></li>
+                    <li><a href="mailto:support@fixcase.ru" target="_blank">support@fixcase.ru</a></li>
+                    <li><a class="tel" href="tel:89002834869">8 (900) 283-48-69</a></li>
+                </div>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__center">
+            <div class="container">
+                <div class="footer__center-wrapper">
+                    <picture>
+                        <source media="(max-width: 580px)" srcset="images/small.png">
+                        <source srcset="images/bigLogo.png">
+                        <img class="footer__center__logo" src="images/bigLogo.png" alt="logo">
+                    </picture>
+                    <div class="address">
+                        <li class="footer__wrapper-address"><a href="#">Россия, г. Краснодар
+                            ул. Красных Партизан, 218</a></li>
+                    <li><a href="mailto:support@fixcase.ru" target="_blank">support@fixcase.ru</a></li>
+                    <li><a class="tel" href="tel:89002834869">8 (900) 283-48-69</a></li>
+                    </div>
+                    <div class="footer__center-info">
+                        <ul class="footer__center-info__social">
+                            <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="https://telegram.org/" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+                            <li><a href="https://vk.com/feed" target="_blank"><i class="fab fa-vk"></i></a></li>
+                            <li><a href="https://www.whatsapp.com/?lang=ru" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                        </ul>
+                        <ul class="footer__center-info__payment">
+                            <!--  <li><a href="#"><i class="fab fa-google-pay"></i></a></li>
+                            <li><a href="#"><span></span></a></li>
+                            <li><a href="#">МИР</a></li>
+                            <li><a href="#"><i class="fab fa-cc-visa"></i></i></a></li> -->
+                            <img src="images/payment.png" alt="payment">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom-inner">
+                    <a class="footer__bottom-link" href="#">© Fixcase — интернет магазин, 2020</a>
+                    <a id="politic" class="footer__bottom-link" href="#">Политика конфиденциальности</a>
+                    <a class="footer__bottom-link" href="https://affetta.ru/">Сделано в Affetta</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+</body>
+
+</html>
